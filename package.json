@@ -15,11 +15,23 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "front-end": "npx webpack serve --mode development",
+    "back-end": "node --watch index.js",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "start": "concurrently \"npm run back-end\" \"npm run front-end\""
   },
   "devDependencies": {
+    "concurrently": "^10.0.6",
+    "cross-env": "^10.1.0",
+    "css-loader": "^7.1.5",
     "express": "^5.3.0",
+    "mini-css-extract-plugin": "^2.10.2",
     "sass": "^1.106.1",
-    "webpack": "^5.112.2"
+    "sass-loader": "^17.0.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.112.2",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^5.2.7"
   }
 }
