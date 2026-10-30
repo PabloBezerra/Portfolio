@@ -2,18 +2,59 @@
     "projects":[
         {
             "name":"Quiz Conhecimentos Gerais",
-            "images": [],
-            "info":"info here",
-            "url_visit":"url here",
-            "url_code":"url here"
+            "images": "/img/images/conhecimentos_gerais.webp",
+            "info":"Este é um projeto front end desenvolvido para testar seus conhecimentos em uma variedade de temas. ",
+            "tags":["html", "sass", "javaScript"],
+            "url_visit":"https://pablobezerra.github.io/Quiz_Conhecimentos_Gerais/",
+            "url_code":"https://github.com/PabloBezerra/Quiz_Conhecimentos_Gerais"
         },
         {
-            "name":"chamada",
-            "images": [],
-            "info":"info here",
-            "url_visit":"url here",
-            "url_code":"url here"
-
+            "name":"Gerenciador de tarefas",
+            "images": "/img/images/tarefas.webp",
+            "info":"Aplicação web responsiva de gerenciamento de tarefas, desenvolvida com HTML, Sass e JavaScript, com recursos para adicionar, editar, concluir, excluir e filtrar tarefas.",
+            "tags":["html", "css", "javaScript"],
+            "url_visit":"https://pablobezerra.github.io/Gerenciador_tarefas/",
+            "url_code":"https://github.com/PabloBezerra/Gerenciador_tarefas"
+        },
+        {
+            "name":"E-Comerce",
+            "images":"/img/images/e-comerce.webp",
+            "info":"Página de produto para e-commerce, desenvolvida com HTML, Sass e JavaScript, com galeria de imagens interativa, visualização em lightbox e layout responsivo.",
+            "tags":["html", "css", "javaScript"],
+            "url_visit":"https://pablobezerra.github.io/Ecommerce-product-page/",
+            "url_code":"https://github.com/PabloBezerra/Ecommerce-product-page"
         }
-    ]
+    ],
+    "technologies":{
+        "html":{
+            "ico":"./img/icons/html.png",
+            "info":"O **HTML** é uma linguagem de marcação usada para estruturar páginas web por meio de tags. Ele define o conteúdo básico (textos, imagens e links) e funciona em conjunto com o CSS (estilo) e o JavaScript (interatividade)."
+        },
+        "css":{
+            "ico":"./img/icons/css.png",
+            "info":"O **CSS** (*Cascading Style Sheets* ou Folhas de Estilo em Cascata) é a linguagem usada para estilizar e dar design às páginas web criadas em HTML, controlando cores, fontes, layouts e responsividade."
+        },
+        "javaScript":{
+            "ico":"./img/icons/javaScript.png",
+            "info":"O JavaScript é uma linguagem de programação interpretada que adiciona dinamismo, lógica e interatividade às páginas web."
+        },
+        "sass":{
+            "ico":"./img/icons/sass.png",
+            "info":"O **Sass** (*Syntactically Awesome Style Sheets*) é um pré-processador de CSS que adiciona superpoderes à estilização web, introduzindo recursos como variáveis, aninhamento de regras, funções e mixins para tornar o código mais limpo, modular e fácil de manter."
+        },
+        "webpack":{
+            "ico":"./img/icons/webpack.png",
+            "info":"O **Webpack** é uma ferramenta que junta, otimiza e organiza todos os arquivos (JS, CSS, imagens) de um projeto web em pacotes eficientes para o navegador carregar."
+        },
+        "nodeJs":{
+            "ico":"./img/icons/nodeJs.png",
+            "info":"O **Node.js** é um ambiente de execução que permite rodar código JavaScript fora do navegador (como no servidor), permitindo criar aplicações backend rápidas e escaláveis usando a mesma linguagem do frontend."
+        }
+    
+    },
+    "contacts":{
+        "email":"pdsbezerra@protonmail.com",
+        "linkedin":"www.linkedin.com/in/pablobezerras",
+        "github":"https://github.com/PabloBezerra"
+    }
 }

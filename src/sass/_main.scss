@@ -1,0 +1,128 @@
+@use './variables' as *;
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    .head{
+        width: 100%;
+        height: auto;
+        padding: 120px 0 128px;
+
+        span{
+            width: 100%;
+            height: auto;
+            font-family: $fontMono;
+            color: $highlight;
+            font-size: 14px;
+        }
+        h1{
+            font-family: $fontInter;
+            font-size: 64px;
+            font-weight: 700;
+            margin: 20px 0px;
+            letter-spacing: -0.02em;
+            line-height: 1.08;
+        }
+
+        #info{
+            color: $txtSec;
+            font-family: $fontInter;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btnsHead{
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+
+            button{
+                width: 150px;
+                height: 50px;
+                margin: 10px 0px;
+                border-radius: 10px;
+                border: 1px solid $border;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            #btnProject{
+                background-color: $highlight;
+                color: $txtBtn;
+            }
+
+            #btnContact{
+                background-color: $bgPage;
+                color: txt;
+            }
+        }
+    }
+
+    .project{
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+        padding-bottom: 112px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        h2{
+            font-size: 32px;
+            letter-spacing: -0.01em;
+        }
+        #count{
+            font-family: $fontMono;
+            color: $txtSec;
+            font-size: 13px;
+        }
+
+        .card{
+            flex-basis: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            li#card{
+                display: flex;
+                flex-direction: column;
+
+                #thumb{
+                    width: 90%;
+                    height: auto;
+                    position: relative;
+
+                     img{
+                        width: 300px;
+                     }
+                     #tags{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        position: absolute;
+                        z-index: 0  ;
+
+                        img{
+                            width: 25px;
+                        }
+                     }
+                }
+
+                h3{}
+                p{}
+                button{}
+            }
+        }
+    }
+
+}

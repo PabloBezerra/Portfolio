@@ -1,3 +1,32 @@
+@use './_variables' as *;
+@use './_nav';
+@use './_main';
+@use './footer';
+
+// Mixins
+@mixin wideScreen{
+    @media screen and (min-width:900px) {
+        @content;
+    }
+}
+
+// Reset Geral
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $fontInter;
+    color: $txt;
+    box-sizing: border-box;
+    transition: all ease-in-out .5s;
+
+    &::after,&::before{
+        transition: all ease-in-out .5s;
+    }
+}
+    
 body{
-    background-color: white;
+    width: 100vw;
+    min-width: 320px;
+    height: 100vh;
+    background-color: $bgPage;
 }
