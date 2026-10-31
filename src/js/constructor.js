@@ -1,7 +1,6 @@
 export function constructProjects(data, tec, dom){
     data.forEach(element => {
         const li = create('li')
-        const divThumb = create('div')
         const img = create('img')
         const divTags = create('div')
         const h3 = create('h3')
@@ -12,7 +11,6 @@ export function constructProjects(data, tec, dom){
         const aCode = create('a')
 
         li.id = 'card'
-        divThumb.id = 'thumb'
         img.src = element.images
         divTags.id = 'tags'
 
@@ -27,17 +25,20 @@ export function constructProjects(data, tec, dom){
         p.innerHTML  = element.info
         aVisit.href = element.url_visit
         aCode.href = element.url_code
-
-
-        divThumb.appendChild(img)
-        divThumb.appendChild(divTags)
+        aVisit.innerHTML = 'Visitar'
+        aVisit.target = '_blank'
+        aCode.innerHTML = 'Ver Código'
+        aCode.target = '_blank'
         
         buttonVisit.appendChild(aVisit)
+        buttonVisit.id = 'btnVisit'
         buttonCode.appendChild(aCode)
-
-        li.appendChild(divThumb)
+        buttonCode.id = 'btnCode'
+        
+        li.appendChild(img)
         li.appendChild(h3)
         li.appendChild(p)
+        li.appendChild(divTags)
         li.appendChild(buttonVisit)
         li.appendChild(buttonCode)
 
